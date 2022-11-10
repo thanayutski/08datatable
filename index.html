@@ -1,56 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Home</title>
-        <!-- CSS only -->
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-            crossorigin="anonymous">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
-        <!-- JavaScript Bundle with Popper -->
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-            crossorigin="anonymous"></script>
-        <link href="css/style.css" rel="stylesheet">
-    </head>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <link href="css/style.css" rel="stylesheet">
 
-    <body>
-        <div class="container mt-5">
-            <div class="row">
-                <div class="col-xl-2 col-lg-4 col-md-6 col-sm-12">
-                    <div class="d-grid">
-                        <button type="button" class="btn btn-primary btn-block">thanayut</button>
-                    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css">
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-xl-2 col-lg-4 col-md-6 col-sm-12">
+                <div class="d-grid">
+                    <button type="button" class="btn btn-info btn-block">thanayut</button>
                 </div>
+            </div>
 
-                <div class="col-xl-2 col-lg-4 col-md-6 col-sm-12">
-                    <div class="d-grid">
-                        <button type="button" class="btn btn-primary btn-block">jingmak</button>
-                    </div>
+            <div class="col-xl-2 col-lg-4 col-md-6 col-sm-12">
+                <div class="d-grid">
+                    <button type="button" class="btn btn-danger btn-block">jingmak</button>
                 </div>
+            </div>
 
-                <div class="col-xl-2 col-lg-4 col-md-6 col-sm-12">
-                    <div class="d-grid">
-                        <button type="button" class="btn btn-primary btn-block">08</button>
-                    </div>
+            <div class="col-xl-2 col-lg-4 col-md-6 col-sm-12">
+                <div class="d-grid">
+                    <button type="button" class="btn btn-primary btn-block">08</button>
                 </div>
+            </div>
 
-                <div class="col-xl-2 col-lg-4 col-md-6 col-sm-12">
-                    <div class="d-grid">
-                        <button type="button" class="btn btn-primary btn-block">yo</button>
-                    </div>
+            <div class="col-xl-2 col-lg-4 col-md-6 col-sm-12">
+                <div class="d-grid">
+                    <button type="button" class="btn btn-warning btn-block">yo</button>
                 </div>
             </div>
         </div>
-    </body>
+    </div>
+    <div class="container">
+        <div class="card">
+            <div class="card-header">Header</div>
+            <div class="card-body">
+                <table id="example" class="table table-striped" style="width:100%">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Position</th>
+                            <th>Office</th>
+                            <th>Age</th>
+                            <th>Start date</th>
+                            <th>Salary</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Siwagon Wongchan</td>
+                            <td>Student</td>
+                            <td>chiangmai</td>
+                            <td>20</td>
+                            <td>2002-06-13</td>
+                            <td>$10</td>
+                        </tr>
+                        <tr>
+                            <tr>
+                                <td>Chaloemwud</td>
+                                <td>Student</td>
+                                <td>chiangmai</td>
+                                <td>19</td>
+                                <td>2077-20-35</td>
+                                <td>$30</td>
+                            </tr>
+                        </tr>
+                        <tr>
+                            <td>Kittiphon panchong</td>
+                            <td>Student</td>
+                            <td>chiangmai</td>
+                            <td>20</td>
+                            <td>2002-02-22</td>
+                            <td>$10</td>
+                        </tr>
 
-    
+                        <tr>
+                            <td>Kanoot Boonsri</td>
+                            <td>CEO Lannapoly</td>
+                            <td>Lannapoly</td>
+                            <td>19</td>
+                            <td>2003-03-21</td>
+                            <td>$1000,000,000</td>
+                        </tr>
+
+                        <td>Wacharin Koonyotying</td>
+                                <td>Chef</td>
+                                <td>Chiangmai</td>
+                                <td>20</td>
+                                <td>2002-11-08</td>
+                                <td>$750,000</td>
+
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th>t</th>
+                            <th>Position</th>
+                            <th>Office</th>
+                            <th>Age</th>
+                            <th>Start date</th>
+                            <th>Salary</th>
+                        </tr>
+                    </tfoot>
+                </table>
+
+            </div>
+            <div class="card-footer">Footer</div>
+        </div>
+    </div>
+
+</body>
+<script>
+    $(document).ready(function () {
+        $('#example').DataTable();
+    });  
+</script>
+
 
 </html>
